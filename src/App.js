@@ -13,9 +13,9 @@ const App = () => {
         <Header />
         <Sidebar />
         <Routes>
-          <Route exact path="/" component={MailList} />
-          <Route exact path="/:tag" component={MailList} />
-          <Route exact path="/:tag/:id" component={MailDetail} />
+          <Route path="/" element={<MailList tag="inbox" />} />
+          <Route path="/:tag" element={<MailList tag="tag" />} />
+          <Route path="/:tag/:id" element={<MailDetail />} />
         </Routes>
       </div>
     </Router>

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <Link to="/">Logo</Link>
+        <Link to="/">Gmail</Link>
       </div>
       <div className="search-bar">
         <input type="text" placeholder="Search" />

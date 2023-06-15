@@ -36,6 +36,7 @@ const MailList = () => {
             <Link to={`/${mail.tag}/${mail.id}`}>{mail.subject}</Link>
           </h3>
           <p>{mail.body}</p>
+          <p>Tag: {mail.tag}</p>
           <hr />
         </div>
       ))}

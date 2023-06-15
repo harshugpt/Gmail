@@ -12,6 +12,9 @@ const Sidebar = () => {
           <Link to="/inbox">Inbox</Link>
         </li>
         <li>
+          <Link to="/draft">Draft</Link>
+        </li>
+        <li>
           <Link to="/trash">Trash</Link>
         </li>
         <li>
