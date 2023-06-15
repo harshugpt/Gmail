@@ -19,6 +19,9 @@ const MailList = () => {
         } else {
           setMails(data);
         }
+        /*{
+          tag ? setMails(filteredMails) : setMails(data);
+        }*/
       } catch (error) {
         console.log(error);
       }

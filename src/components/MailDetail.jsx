@@ -13,8 +13,10 @@ const MailDetail = () => {
           "https://run.mocky.io/v3/15a3a1c3-1cda-4409-b1b1-2f39f5f25123"
         );
         const data = response.data;
-        const foundMail = data.find((mail) => mail.id === id);
-        setMail(foundMail);
+        const selectedMail = data.find(
+          (mail) => parseInt(mail.id) === parseInt(id)
+        );
+        setMail(selectedMail);
       } catch (error) {
         console.log(error);
       }
@@ -30,6 +32,7 @@ const MailDetail = () => {
   return (
     <div>
       <h1>Mail Detail</h1>
+      <h2>{mail.userId}</h2>
       <h3>{mail.subject}</h3>
       <p>{mail.body}</p>
     </div>
